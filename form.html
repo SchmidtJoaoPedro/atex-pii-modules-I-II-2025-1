@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_re.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="../navcode/images/icon.png">
+  <title>Login | Go!Recycle</title>
+</head>
+
+<body>
+
+  <header>
+    <nav id="navbar" class="navbar-gorecycle">
+      <a href="index.html"><i class="fa-solid fa-recycle" id="nav_logo"> Go!Recycle</i></a> <!--logo-->
+    </nav>
+  </header>
+
+  <!-- Janela -->   <!-- Mudar o action para login.php quando o arquivo estiver pronto para receber logins -->
+  <main>
+    <form action="index.html" method="post" class="loginform" id="logform">
+      <div class="content">
+        <div class="window">
+          <div class="login-container">
+            <div id="login-logo-div">
+              <br><br>
+              <h1 id="login-logo">ENTRAR</h1>
+              <br>
+            </div>
+            <div id="email-login">
+              <br>
+              <label id="login-email" for="email" place>Email:</label> <br>
+              <input type="email" size="40" width="100" id="emailLogin">
+              <br><br>
+            </div>
+            <div id="senha-login">
+              <br><br>
+              <label id="login-senha" for="senha">Senha:</label> <br>
+              <input type="senha" size="40" width="75" id="senhaLogin">
+              <br><br>
+            </div>
+            <div id="buttons-login-cad">
+              <br>
+              <button id="login-button" type="submit">LOG-IN</button>
+              <br><br>
+              <a href="../navcode/cadform.html" id="cad-button">CADASTRAR</a>
+              <br><br>
+            </div>
+          </div>
+          <div class="image-panel">
+            <img src="images/happy.png" alt="happy_recycle">
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+
+</body>
+
+</html>

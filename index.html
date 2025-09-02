@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="../navcode/images/icon.png">
+    <title>Pagina inicial | Go!Recycle</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-recycle" id="nav_logo"> Go!Recycle</i> <!--logo-->
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Impactos">Ambiental e Social</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Lixo_Eletrônico">Lixo eletrônico</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Outros">Outros</a>
+                </li>
+            </ul>
+
+            <div id="button-div">
+                <button class="btn-default" onclick="window.location.href='form.html'">
+                    <span class="material-symbols-outlined">account_circle</span> Entrar
+                </button>
+
+                <button class="btn-default" onclick="window.location.href='cadform.html'">
+                    <span class="material-symbols-outlined">emoji_people</span> Cadastrar
+                </button>
+
+                <button class="btn-default" onclick="window.location.href='pontos_re.html'">
+                    <span class="material-symbols-outlined">cached</span> Pontos de Coleta
+                </button>
+
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i> <!--botão-nav-->
+                </button>
+
+            </div>
+        </nav>
+
+        <div id="mobile_menu">
+
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Impactos">Ambiental e Social</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Lixo_Eletrônico">Eletrônicos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Outros">Outros</a>
+                </li>
+            </ul>
+
+            <ul id="mobile_nav_list_btn">
+                <li><button class="btn-default">
+                        <a href="form.html"><span class="material-symbols-outlined">account_circle</span> Login</a>
+                    </button> 
+                </li>
+                <li><button class="btn-default" onclick="window.location.href='cadform.html'">
+                        <span class="material-symbols-outlined">emoji_people</span> Cadastrar
+                    </button> 
+                </li>
+                <li><button class="btn-default" onclick="window.location.href='pontos_re.html'">
+                        <span class="material-symbols-outlined">cached</span> Pontos de Coleta
+                    </button> 
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--PAUSE BREAK -->
+
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">
+                    Impactos ambientais e sociais do
+                    <span>lixo eletrônico</span>
+                </h1>
+
+                <p class="description" id="translate">
+                    One of the <span id="important-span">most challenging</span> issues in the contemporary global
+                    scenario. <button id="btn-translate" onclick="translatePortuguese()"><span
+                            class="material-symbols-outlined">translate</span></button>
+                </p>
+            </div>
+
+            <div id="banner">
+                <img src="images/ChatGPT Image 3 de abr. de 2025, 13_16_28.png" alt="cellfone">
+            </div>
+        </section> <br>
+
+        <section class="Intro" id="Intro">
+            <div id="introduction">
+                <div id="intro_title">
+                    <h1>Introdução</h1>
+                </div><br>
+
+                <div id="intro_start">
+                    <p>O lixo eletrônico é uma das questões mais desafiadoras no cenário global contemporâneo. O rápido
+                        avanço tecnológico, aliado ao consumo excessivo de dispositivos eletrônicos, tem gerado um
+                        aumento significativo de resíduos que, se não gerenciados adequadamente, podem causar sérios
+                        danos ao meio ambiente e à saúde humana.</p>
+                </div> <br>
+
+                <div id="intro_end">
+                    <p>Sendo assim, este trabalho tem como objetivo analisar os impactos ambientais e sociais do lixo
+                        eletrônico e investigar a legislação vigente que regula o descarte e a reciclagem desses
+                        resíduos no Brasil.</p>
+                </div>
+            </div>
+            <div id="intro_image">
+                <img src="../navcode/images/lixo_eletronico.jpg" alt="lixo">
+            </div>
+        </section> <br>
+
+        <!--PAUSE BREAK-->
+
+        <section class="Impactos" id="Impactos">
+            <div id="impacts">
+                <div class="nice_title">
+                    <h1>Impactos do Lixo Eletrônico</h1>
+                </div> <br>
+
+                <div class="impacts_amb_itens" id="Ambiental">
+                    <h2 class="amb_title">- Impactos no Ambiente -</h2><br>
+
+                    <h3><span class="span_text" id="span_h3">Contaminação do Solo:</span></h3>
+
+                    <li><span class="span_text">Mercúrio:</span> <span class="span_detail">Usado em telas de LCD e
+                            outros componentes, o mercúrio
+                            é altamente tóxico e pode contaminar o solo, além de ser muito difícil de remover.</span>
+                    </li>
+                    <li><span class="span_text">Chumbo:</span> <span class="span_detail">Encontrado em soldas de placas
+                            de circuito e outros
+                            componentes, o chumbo é um material extremamente tóxico que, se entrar em contato com o
+                            solo,
+                            pode afetar plantas, animais e até humanos.</span></li>
+                    <li><span class="span_text">Cádmio:</span> <span class="span_detail">Usado em baterias, o cádmio é
+                            outro metal pesado que pode
+                            se infiltrar no solo e afetar a biodiversidade.</span></li><br>
+
+                    <h3 id="span_h3"> Contaminação da Água:</h3>
+
+                    <li><span class="span_text">Ecossistemas aquáticos: </span> <span class="span_detail">
+                            Animais marinhos e organismos aquáticos
+                            podem ser envenenados por essas toxinas, prejudicando a biodiversidade e afetando a cadeia
+                            alimentar.
+                        </span></li>
+                    <li><span class="span_text">Água Potável:</span> <span class="span_detail">
+                            A contaminação da água pode ter efeitos diretos
+                            sobre as populações humanas que dependem de fontes de água contaminadas, aumentando os
+                            riscos de
+                            doenças.
+                        </span></li> <br>
+
+                    <div id="bleh">
+                        <p class="impacts_amb_alt-itens">- Há a <strong>emissão de gases tóxicos</strong>, como o
+                            Dióxido de Carbono (<span class="span_text">CO2</span>) e o Metano (<span
+                                class="span_text">CH4</span>) que contribuem para o <span class="span_text">Efeito
+                                Estufa</span> e o <span class="span_text">Aquecimento Global</span>, além da liberação
+                            de <a href="https://www.infoescola.com/compostos-quimicos/dioxina/">Dioxinas</a> e <a
+                                href="https://www.infoescola.com/quimica/furanos/">Furanos</a>, que prejudicam o Sistema
+                            Imunológico, causam problema respiratório, doenças cardiovasculares e <span
+                                class="span_text">Câncer</span>.
+
+                        <p>- Com a contaminação do solo e da água, é reduzido a disponibilidade de alimento e água limpa
+                            para muitas espécies, ameaçando suas populações e destruindo habitats.</p>
+
+                        - Além disso, é notável o desperdício de recursos <span class="span_text">naturais</span>, como
+                        o Cobre (<span class="span_text">Cu</span>), Prata (<span class="span_text">Ag</span>) e Ouro
+                        (<span class="span_text">Au</span>), os quais são muito utilizados na fabricação de circuitos e
+                        cabos, e <span class="span_text">artificiais</span>, sendo esses o plástico e o vidro que
+                        poderiam ser reciclados e usados para fabricação de novos produtos. No caso dos metais pesados,
+                        eles prejudicam os animais, afetando seu sistema digestivo.</p>
+                    </div>
+                </div><br><br>
+
+
+
+                <div class="impacts_amb_itens" id="Social">
+                    <h2 class="amb_title">- Impactos Sociais -</h2><br>
+
+                    <h3 id="span_h3">Problemas na Saúde Pública:</h3>
+
+                    <li><span class="span_text">Doenças respiratórias: </span> <span class="span_detail">
+                            A inalação de vapores tóxicos gerados pela
+                            queima de eletrônicos pode prejudicar os pulmões.
+                        </span></li>
+                    <li><span class="span_text">Intoxicação e câncer: </span> <span class="span_detail">
+                            A exposição contínua a metais pesados pode
+                            causar intoxicações agudas e doenças crônicas, incluindo câncer.
+                        </span></li>
+                    <li><span class="span_text">Distúrbios no sistema nervoso:</span> <span class="span_detail">
+                            O mercúrio e o chumbo, por
+                            exemplo, são neurotóxicos e podem afetar o cérebro, causando problemas de desenvolvimento em
+                            crianças e distúrbios neurológicos em adultos.
+                        </span></li>
+                    <li><span class="span_text">Contaminação da água e do solo:</span> <span class="span_detail">
+                            Substâncias tóxicas que
+                            contaminam o solo e a água podem afetar diretamente as populações que dependem desses
+                            recursos
+                            para consumo, além de prejudicar a segurança alimentar, caso as plantações e os animais
+                            também
+                            sejam contaminados.
+                        </span></li><br>
+
+                    <div id="bleh">
+                        <p class="impacts_amb_alt-itens">- Em algumas regiões, principalmente em <span
+                                class="span_text">países em desenvolvimento</span>, o lixo eletrônico é reciclado de
+                            forma informal, com trabalhadores, muitas vezes <span class="span_text">crianças</span>,
+                            desmontando os dispositivos sem qualquer proteção. Isso resulta em exposição direta a <span
+                                class="span_text">substâncias tóxicas</span>, além de condições de trabalho extremamente
+                            perigosas e insalubres.</p>
+
+                        <p class="impacts_amb_alt-itens">- Comunidades de baixa renda, muitas vezes situadas em <span
+                                class="span_text">áreas periféricas</span> ou próximas a <a
+                                href="https://www.ecycle.com.br/lixao/">lixões</a> e <a
+                                href="https://www.ecycle.com.br/aterro-sanitario/">aterros sanitários</a>, são mais
+                            propensas a sofrer com a poluição resultante do <span class="span_text">descarte inadequado
+                                de lixo eletrônico</span>. Elas enfrentam o impacto de solos e águas contaminados, com
+                            consequências diretas para a saúde da população.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div_footage">
+                <div class="mother_img" id="img_02">
+                    <img src="../navcode/images/ChatGPT Image 16 de abr. de 2025, 00_11_28.png" alt="aaaa">
+                </div> <br><br><br><br>
+
+                <div class="mother_img" id="img_03">
+                    <img src="../navcode/images/OIP.jpg" alt="CO2">
+                </div> <br><br><br><br><br><br><br><br><br><br>
+
+                <div class="mother_img" id="img_social">
+                    <img src="../navcode/images/ChatGPT Image 16 de abr. de 2025, 02_22_48.png" alt="aaaa">
+                </div>
+            </div>
+        </section> <br>
+
+        <!--PAUSE BREAK-->
+
+        <section class="Lixo_Eletronico" id="Lixo_Eletrônico">
+            <div id="classification">
+                <div class="nice_title">
+                    <h1> Classificação do Lixo Eletrônico</h1>
+                </div><br>
+
+                <div class="impacts_amb_itens"> 
+                    <span class="span_detail">
+                        <li>Celulares e Smartphones</li>
+                        <li>Computadores e Notebooks</li>
+                        <li>Baterias e Carregadores</li>
+                        <li>Televisores e Monitores</li>
+                        <li>Impressoras e Scanners</li>
+                        <li>Equipamento de Áudio e Vídeo</li>
+                        <li>Placas-mãe, Circuitos e outros Componentes Eletrônicos</li>
+                    </span>
+                </div>
+            </div>
+
+            <div class="carousel-container"> <!--Código do carrossel-->
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="slide" style="background-image: url('slidesimages/cel.jpg');"></div>
+                    <div class="slide" style="background-image: url('slidesimages/pc.jpg');"></div>
+                    <div class="slide" style="background-image: url('slidesimages/bat.jpg');"></div>
+                    <div class="slide" style="background-image: url('slidesimages/tele.jpg');"></div>
+                    <div class="slide" style="background-image: url('slidesimages/imp.jpg');"></div>
+                    <div class="slide" style="background-image: url('slidesimages/aud.jpg');"></div>
+                    <div class="slide" style="background-image: url('slidesimages/comp.jpg');"></div>
+                </div>
+
+                <button class="nav-button prev" onclick="moveSlide(-1)">←</button>
+                <button class="nav-button next" onclick="moveSlide(1)">→</button>
+            </div>
+        </section> <br><br>
+
+        <!--PAUSE BREAK-->
+
+        <section class="Lei_Vigente" id="Outros">
+            <div id="outros">
+                <div class="nice_title" id="outros_title">
+                    <h1>Lei Vigente</h1>
+                </div><br>
+
+                <div class="impacts_amb_itens">
+                    <ul>-> <span class="span_text">Lei 12.305/2010:</span></ul>
+                    <li><span class="span_detail">
+                            Estabelece a Política Nacional de Resíduos Sólidos (PNRS) Inclui o lixo eletrônico no texto
+                            da PNRS, de 1998;
+                        </span></li>
+                    <li><span class="span_detail">Estabelece uma responsabilidade compartilhada pelo ciclo de vida do
+                            produto.</span></li><br>
+
+                    <ul>-> <span class="span_text">Resolução Conama 452/2012:</span></ul>
+                    <li><span class="span_detail">Estabelece critérios e procedimentos para o descarte de pilhas e
+                            baterias, incluindo aquelas
+                            presentes em dispositivos eletrônicos.</span></li><br>
+
+                    <ul>-> <span class="span_text">Decreto nº 10.240/2020:</span></ul>
+                    <li><span class="span_detail">Trata da logística reversa de produtos eletroeletrônicos.</span></li>
+                    <br>
+
+                    <ul>-> <span class="span_text">Decreto nº 10.936/2022:</span></ul>
+                    <li><span class="span_detail">Regulamentou a Lei nº 12.305/2010.</span></li><br>
+
+                    <ul>-> <span class="span_text">Decreto nº 11.043/2022:</span></ul>
+                    <li><span class="span_detail">Estabelece o Plano Nacional de Resíduos Sólidos.</span></li><br>
+                </div>
+            </div>
+
+            <div id="outros_img">
+                <video src="../navcode/video/video.mp4" controls></video>
+            </div>
+
+        </section><br>
+
+    </main>
+
+    <!--PAUSE BREAK-->
+    <section id="footer">
+        <footer class="home_footer">
+            <div id="footer-links">
+                <a target="_blank" href="page_party.html" id="alunos">Alunos</a>
+                <a target="_blank" href="https://www.unifenas.br/computacaoalfenas.asp" id="unifenas">Unifenas</a>
+                <a href="referencias.html" id="referencias11">Referências</a>
+            </div>
+
+            <div id="social-icons">
+                <a target="_blank" href="https://www.ecycle.com.br/reciclagem-de-eletronicos/"><span
+                        class="material-symbols-outlined">recycling</span></a>
+            </div>
+
+            <div id="footer-copyright">
+                <p>© 2025 <a href="#top">Go!Recicle</a>. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="javascript/translatescript.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/slidescript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #FFF9E6;
+    }
+    
+    header {
+      background-color: transparent;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      opacity: 0;
+      animation: fadeInHeader 1s forwards;
+    }
+    
+    @keyframes fadeInHeader {
+      to { opacity: 1; }
+    }
+    
+    a {
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    a:hover {
+        filter: brightness(1.05);
+        text-shadow: 2px 2px 10px rgb(255, 229, 84);
+        transform: scale(1.05);
+    }
+
+    header .logo {
+        color: gold;
+      font-size: 34px;
+      font-weight: bold;
+    }
+    
+    nav button {
+      background-color: transparent;
+      color: rgb(0, 0, 0);
+      font-size: 17px;
+      border: none;
+      padding: 10px 20px;
+      margin-left: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    nav button:hover {
+      color: #ffcb45;
+      transform: scale(1.10);
+    }
+    
+    .content {
+      height: calc(100vh - 120px); 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      animation: fadeInContent 1s forwards 0.5s;
+    }
+    
+    @keyframes fadeInContent {
+      to { opacity: 1; }
+    }
+    
+    .window {
+      background-color: #fff;
+      width: 80vw;
+      height: 70vh;
+      border: 2px solid #000000;
+      box-shadow: 7px 7px 2px rgba(0,0,0,0.3);
+      border-radius: 6px;
+      display: flex;
+      overflow: hidden;
+      transform: translateY(30px);
+      opacity: 0;
+      animation: slideInWindow 0.8s forwards;
+    }
+
+    .led {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-color: gray; /* padrão */
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    
+  .aberto {
+    background-color: green;
+    box-shadow: 0 0 10px lime;
+  }
+
+  .fechado {
+    background-color: red;
+    box-shadow: 0 0 10px darkred;
+  }
+
+  .btn-locativo {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    color: #e8a100;
+  }
+
+  .loja {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+    @keyframes slideInWindow {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    .map-container, .info-panel {
+      height: 100%;
+    }
+    
+    .map-container {
+      flex: 2;
+      position: relative;
+    }
+    
+    #map {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    
+    .info-panel {
+      flex: 1;
+      border-left: 1px solid #ddd;
+      padding: 15px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .info-panel textarea {
+      width: 100%;
+      height: 75%;
+      resize: none;
+      border: 2px solid #000000;
+      padding: 10px;
+      font-size: 14px;
+      box-sizing: border-box;
+      transition: opacity 0.5s;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 14px;
+      opacity: 0;
+      animation: fadeInFooter 1s forwards 1s;
+     
+    }
+    
+    @keyframes fadeInFooter {
+      to { opacity: 1; }
+    }
+    
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    footer a:hover {
+      color: gold;
+    }
+    
+    .fade-transition {
+      animation: fadeTransition 0.5s;
+    }
+    
+    @keyframes fadeTransition {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

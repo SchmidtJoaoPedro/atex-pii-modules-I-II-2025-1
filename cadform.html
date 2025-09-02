@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_re.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_cad.css">
+    <link rel="icon" type="image/png" href="../navcode/images/icon.png">
+    <title>Cadastrar-se | GoRecycle!</title>
+</head>
+
+<body id="cadbody">
+
+    <header>
+        <nav id="navbar-cad" class="navbar-gorecycle">
+            <a href="index.html"><i class="fa-solid fa-recycle" id="nav_logo"> Go!Recycle</i></a> <!--logo-->
+        </nav>
+    </header>
+
+    <main>            <!-- Mudar o action para script.php quando o arquivo estiver pronto para receber cadastros -->
+        <form action="index.html" method="post" id="cadform">
+            <div class="content">
+                <div class="window">
+                    <div class="login-container">
+                        <div id="login-logo-div">
+                            <br><br>
+                            <h1 id="login-logo">CADASTRAR</h1>
+                            <br>
+                        </div>
+                        <div id="email-login" class="email">
+                            <br>
+                            <label id="cad-email" for="email">Email:</label> <br>
+                            <input type="email" id="email" name="email" size="90" width="100" placeholder="Seu email">
+                            <br><br>
+                        </div>
+                        <div id="senha-login" class="senha">
+                            <br><br>
+                            <label id="cad-senha" for="senha">Senha:</label> <br>
+                            <input type="senha" id="senha" name="senha" size="80" width="75" placeholder="Sua senha">
+                            <br><br>
+                        </div>
+                        <div id="buttons-login-cad">
+                            <br>
+                            <button id="login-button" type="submit">CADASTRAR-SE</button>
+                            <br><br>
+                            <a href="../navcode/form.html" id="cad-button">JÁ POSSUI LOGIN?</a>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="javascript/cad-log/cadform.js"></script>
+    </main>
+
+    <footer>
+        <nav>
+        </nav>
+    </footer>
+</body>
+
+</html>

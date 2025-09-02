@@ -1,0 +1,30 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+.texto_bl p {
+    transform: translateX(25px);
+}
+
+#xnav-logo:hover {
+  filter: brightness(1.05);
+  text-shadow: 2px 2px 10px rgb(255, 229, 84);
+}
