@@ -24,7 +24,7 @@
 }
 
 * {
-   font-family: 'poppins' , sans-serif;
+   font-family: 'poppins', sans-serif;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -36,7 +36,9 @@ html, body {
 
 body {
     background-color: var(--color-primary-1);
+    padding-top: 91px; /* Altura aproximada do header */
 }
+
 section {
     padding: 28px 8%;
 }
@@ -53,7 +55,7 @@ section {
     font-weight: 600;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: .3s ease;
+    transition: all 0.2s ease;
 }
 
 #btn-translate {
@@ -67,7 +69,7 @@ section {
     font-weight: 600;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: .3s ease;
+    transition: all 0.2s ease;
 }
 
 .btn-default:hover {
@@ -97,10 +99,13 @@ section {
 header {
     width: 100%;
     padding: 28px 8%;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     background-color: var(--color-primary-1);
-    z-index: 2;
+    z-index: 1000;
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #navbar {
@@ -126,19 +131,44 @@ header {
     list-style: none;
     gap: 48px;
 }
+
+.nav-item {
+    position: relative;
+}
+
 .nav-item a {
     text-decoration: none;
     color: var(--color-primary-2);
     font-weight: 600;
+    transition: color 0.2s ease, transform 0.15s ease;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
 }
 
-.nav-item.active a {
+.nav-item a::after {
+    content: '';
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 3px;
+    background-color: var(--color-primary-4);
+    transform: scaleX(0);
+    transition: transform 0.2s ease-out;
+}
+
+.nav-item.active a {
     color: var(--color-neutral-1);
-    border-bottom: 3px solid var(--color-primary-4);
+}
+
+.nav-item.active a::after {
+    transform: scaleX(1);
+}
+
+.nav-item a:hover {
+    color: var(--color-neutral-1);
+    transform: translateY(-2px);
 }
 
 #mobile_btn {
@@ -155,7 +185,7 @@ header {
 
 #home {
     display: flex;
-    min-height: calc(100vh - 91px);
+    min-height: 100vh;
     position: relative;
 }
 
@@ -222,7 +252,7 @@ footer {
     color: var(--color-primary-9);
     margin: 0 15px;
     text-decoration: none;
-    transition: color 0.4s;
+    transition: color 0.2s ease;
 }
 
 #alunos:hover {
@@ -246,7 +276,7 @@ footer {
     margin: 0 10px;
     color: var(--color-neutral-0);
     font-size: 20px;
-    transition: 0.4s;
+    transition: all 0.2s ease;
 }
 
 #social-icons a:hover {
@@ -257,7 +287,7 @@ footer {
 #footer-copyright a {
     color: var(--color-neutral-0);
     text-decoration: none;
-    transition: 0.4s;
+    transition: color 0.2s ease;
 }
 
 #footer-copyright a:hover {
@@ -266,6 +296,36 @@ footer {
 
 .material-symbols-outlined footer {
     color: var(--color-neutral-0);
+}
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: var(--color-primary-6);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+#backToTop:hover {
+    background-color: var(--color-primary-11);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#backToTop.show {
+    display: block;
 }
 
 @media screen and (max-width: 1170px) {

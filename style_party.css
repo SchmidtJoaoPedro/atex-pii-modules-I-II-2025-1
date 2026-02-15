@@ -1,10 +1,18 @@
 body {
     margin: 0;
+    padding-top: 80px; /* Compensa altura do navbar fixo */
     background: #fff9e6;
 }
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: block; 
-    background-color: transparent;
+    background-color: #fff9e6;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar > a > i {
@@ -148,4 +156,51 @@ body {
   text-decoration: none;
   color: #e8a100;
   justify-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .titulo {
+    font-size: 48px;
+    margin: 30px 20px;
+  }
+
+  #joke {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .participant {
+    width: 95%;
+    margin: 15px 0;
+  }
+
+  .participant .legenda {
+    font-size: 1em;
+    padding: 8px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titulo {
+    font-size: 32px;
+    margin: 20px 10px;
+  }
+
+  #joke {
+    font-size: 14px;
+  }
+
+  .participant {
+    width: 98%;
+    margin: 10px 0;
+  }
+
+  .participant .legenda {
+    font-size: 0.9em;
+    padding: 6px 0;
+  }
+
+  .vaporwave-grid::before {
+    animation: none; /* Desativa animação em mobile para performance */
+  }
 }

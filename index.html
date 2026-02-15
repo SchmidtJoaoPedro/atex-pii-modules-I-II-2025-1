@@ -4,6 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Go!Recycle - Conheça os impactos ambientais e sociais do lixo eletrônico e aprenda sobre reciclagem responsável de dispositivos eletrônicos.">
+    <meta name="keywords" content="lixo eletrônico, reciclagem, e-waste, meio ambiente, sustentabilidade, descarte correto, eletrônicos, impacto ambiental">
+    <meta name="author" content="Go!Recycle">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Go!Recycle - Reciclagem de Lixo Eletrônico">
+    <meta property="og:description" content="Descubra os impactos do lixo eletrônico e como reciclar corretamente seus dispositivos.">
+    <meta property="og:site_name" content="Go!Recycle">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Go!Recycle - Reciclagem de Lixo Eletrônico">
+    <meta name="twitter:description" content="Descubra os impactos do lixo eletrônico e como reciclar corretamente seus dispositivos.">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -16,10 +32,10 @@
 
 <body>
     <header>
-        <nav id="navbar">
-            <i class="fa-solid fa-recycle" id="nav_logo"> Go!Recycle</i> <!--logo-->
+        <nav id="navbar" role="navigation" aria-label="Navegação principal">
+            <i class="fa-solid fa-recycle" id="nav_logo" aria-hidden="true"> Go!Recycle</i> <!--logo-->
 
-            <ul id="nav_list">
+            <ul id="nav_list" role="menubar">
                 <li class="nav-item active">
                     <a href="#home">Inicio</a>
                 </li>
@@ -90,8 +106,8 @@
 
     <!--PAUSE BREAK -->
 
-    <main id="content">
-        <section id="home">
+    <main id="content" role="main">
+        <section id="home" aria-label="Seção inicial">
             <div id="cta">
                 <h1 class="title">
                     Impactos ambientais e sociais do
@@ -106,11 +122,11 @@
             </div>
 
             <div id="banner">
-                <img src="images/ChatGPT Image 3 de abr. de 2025, 13_16_28.png" alt="cellfone">
+                <img src="images/ChatGPT Image 3 de abr. de 2025, 13_16_28.png" alt="Dispositivo eletrônico representando lixo eletrônico" loading="lazy">
             </div>
         </section> <br>
 
-        <section class="Intro" id="Intro">
+        <section class="Intro" id="Intro" aria-label="Introdução sobre lixo eletrônico">
             <div id="introduction">
                 <div id="intro_title">
                     <h1>Introdução</h1>
@@ -130,13 +146,13 @@
                 </div>
             </div>
             <div id="intro_image">
-                <img src="./images/lixo_eletronico.jpg" alt="lixo">
+                <img src="./images/lixo_eletronico.jpg" alt="Pilha de lixo eletrônico mostrando equipamentos descartados" loading="lazy">
             </div>
         </section> <br>
 
         <!--PAUSE BREAK-->
 
-        <section class="Impactos" id="Impactos">
+        <section class="Impactos" id="Impactos" aria-label="Impactos ambientais e sociais">
             <div id="impacts">
                 <div class="nice_title">
                     <h1>Impactos do Lixo Eletrônico</h1>
@@ -246,22 +262,22 @@
 
             <div class="div_footage">
                 <div class="mother_img" id="img_02">
-                    <img src="./images/ChatGPT Image 16 de abr. de 2025, 00_11_28.png" alt="aaaa">
+                    <img src="./images/ChatGPT Image 16 de abr. de 2025, 00_11_28.png" alt="Ilustração do impacto ambiental do lixo eletrônico" loading="lazy">
                 </div> <br><br><br><br>
 
                 <div class="mother_img" id="img_03">
-                    <img src="./images/OIP.jpg" alt="CO2">
+                    <img src="./images/OIP.jpg" alt="Emissão de gás carbônico (CO2) proveniente de lixo eletrônico" loading="lazy">
                 </div> <br><br><br><br><br><br><br><br><br><br>
 
                 <div class="mother_img" id="img_social">
-                    <img src="./images/ChatGPT Image 16 de abr. de 2025, 02_22_48.png" alt="aaaa">
+                    <img src="./images/ChatGPT Image 16 de abr. de 2025, 02_22_48.png" alt="Impactos sociais do lixo eletrônico nas comunidades" loading="lazy">
                 </div>
             </div>
         </section> <br>
 
         <!--PAUSE BREAK-->
 
-        <section class="Lixo_Eletronico" id="Lixo_Eletrônico">
+        <section class="Lixo_Eletronico" id="Lixo_Eletrônico" aria-label="Classificação do lixo eletrônico">
             <div id="classification">
                 <div class="nice_title">
                     <h1> Classificação do Lixo Eletrônico</h1>
@@ -291,14 +307,14 @@
                     <div class="slide" style="background-image: url('slidesimages/comp.jpg');"></div>
                 </div>
 
-                <button class="nav-button prev" onclick="moveSlide(-1)">←</button>
-                <button class="nav-button next" onclick="moveSlide(1)">→</button>
+                <button class="nav-button prev" onclick="moveSlide(-1)" aria-label="Slide anterior">←</button>
+                <button class="nav-button next" onclick="moveSlide(1)" aria-label="Próximo slide">→</button>
             </div>
         </section> <br><br>
 
         <!--PAUSE BREAK-->
 
-        <section class="Lei_Vigente" id="Outros">
+        <section class="Lei_Vigente" id="Outros" aria-label="Legislação vigente">
             <div id="outros">
                 <div class="nice_title" id="outros_title">
                     <h1>Lei Vigente</h1>
@@ -339,6 +355,12 @@
     </main>
 
     <!--PAUSE BREAK-->
+    
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <section id="footer">
         <footer class="home_footer">
             <div id="footer-links">

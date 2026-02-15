@@ -2,13 +2,18 @@
     body {
       margin: 0;
       padding: 0;
+      padding-top: 60px; /* Compensa altura do header fixo */
       overflow: hidden;
       font-family: Arial, sans-serif;
       background-color: #FFF9E6;
     }
     
     header {
-      background-color: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #FFF9E6;
       color: #fff;
       display: flex;
       align-items: center;
@@ -16,6 +21,8 @@
       padding: 10px 20px;
       opacity: 0;
       animation: fadeInHeader 1s forwards;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     
     @keyframes fadeInHeader {
@@ -190,4 +197,65 @@
     @keyframes fadeTransition {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      nav button {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 5px;
+      }
+
+      .window {
+        width: 95vw;
+        height: 80vh;
+        flex-direction: column;
+      }
+
+      .map-container {
+        height: 60%;
+      }
+
+      .info-panel {
+        height: 40%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+      }
+
+      .info-panel textarea {
+        font-size: 12px;
+        height: 60%;
+      }
+
+      .loja {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header .logo {
+        font-size: 24px;
+      }
+
+      nav button {
+        font-size: 12px;
+        padding: 6px 10px;
+      }
+
+      .window {
+        width: 98vw;
+        height: 85vh;
+      }
+
+      footer {
+        font-size: 12px;
+        padding: 15px 0;
+      }
     }
